@@ -24,7 +24,6 @@
     	<h5>쿠폰 조회</h5>
     	<div>   쿠폰번호 : <input type="text" name="name" id="name" value=""> <button type="submit">조회</button></div>
 	</form>
-	TEST TEST TEST
     
 </body>
 </html>
