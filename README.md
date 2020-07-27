@@ -4,9 +4,9 @@
   * http://localhost:8080/KakaoPay/main.jsp        
   * 쿠폰 발급        
       -Table COUPON
-      PK |coupon_num |   name   |  tel_no  |  valid_dt  |PK|  use_yn  |   
-      ---------------|----------|----------|------------|-------------|
-         varchar     |  varchar | varchar  |  varchar   |    varchar  |
+        coupon_num |   name   |  tel_no  |  valid_dt  |  use_yn |   
+      -------------|----------|----------|------------|---------|
+         varchar   |  varchar | varchar  |  varchar   | varchar |
       
       이름, 전화번호 입력 후 발급버튼      
       Java.util.Ramdom API를 이용 쿠폰번호 생성    
@@ -23,15 +23,16 @@
  -------------------------------------------
  
  ###### DEV     
- framework Spring   
- languge JAVA    
- DB Sqlite    
+ framework : Spring   
+ languge : JAVA    
+ DB : Sqlite    
  
  -------------------------------------------
  
  ###### 성능 테스트      
- 시간당 몇 TPS 부하 테스트 할 것인가 정하기     
- Thread 
+ 부하 테스트       시간당 몇 TPS 부하 테스트 할 것인가 기준를 기준으로 부하 코드 작성 및 테스트
+ 스트레스 테스트    최대 Connection 수치 유지 관련 테스트 
+ 
  
  -------------------------------------------
  
@@ -40,4 +41,3 @@
     - 모색 방안 : Triger로 쿠폰번호 여유분 체크하는 ondemend Monitor batch 생성        
                 제한선까지 다달았을 때 쿠폰번호만 생성하는 실시간 배치가 수행하는 기능 제공
  
-
