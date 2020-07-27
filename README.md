@@ -1,6 +1,7 @@
 # KakaoPay 사전테스트 과제 2번
 -------------------------------------------
 ###### 쿠폰 발급 및 관리 시스템
+  * http://localhost:8080/KakaoPay/main.jsp        
   * 쿠폰 발급 
       
       -Table COUPON
