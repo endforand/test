@@ -14,15 +14,22 @@
 
 <body>
 <br>
-<h3>쿠폰 조회 / 발행 </h3><br>
-	<form action="/KakaoPay/main/result.jsp" method="get">
-		<h5>쿠폰 발급</h5>
-		<div>   이름 : <input type="text" name="name" id="name" value="">   핸드폰 : <input type="text" name="phoneNum" id="phoneNum" value=""> <button type="submit">발급</button></div>
+<br>
+	<!-- form action="/KakaoPay/main/result.jsp" method="get" -->
+	<form action="/KakaoPay/KakaoPaytest/" method="post">
+		<h5>New Coupon</h5>
+		<div>   
+		name : <input type="text" name="name" id="name" value="">   
+		phone no : <input type="text" name="phoneNum" id="phoneNum" value=""> 
+		<button type="submit">submit</button></div>
 	</form>
     
-    <form action="/KakaoPay/main/result2.jsp" method="get">
-    	<h5>쿠폰 조회</h5>
-    	<div>   쿠폰번호 : <input type="text" name="name" id="name" value=""> <button type="submit">조회</button></div>
+    <form action="/KakaoPay/KakaoPaytest/" method="get">
+    	<h5>Search coupon</h5>
+    	<div>   
+		name : <input type="text" name="name" id="name" value="">   
+		phone no : <input type="text" name="phoneNum" id="phoneNum" value="">  
+    	<button type="submit">search</button></div>
 	</form>
     
 </body>
