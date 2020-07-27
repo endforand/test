@@ -2,12 +2,11 @@
 -------------------------------------------
 ###### 쿠폰 발급 및 관리 시스템
   * http://localhost:8080/KakaoPay/main.jsp        
-  * 쿠폰 발급 
-      
+  * 쿠폰 발급        
       -Table COUPON
-      coupon_num |   name   |  tel_no  |  valid_dt  |  use_yn  |   
-      -----------|----------|----------|------------|----------|
-      PK varchar |  varchar | varchar  |  varchar   | varchar  |
+      PK |coupon_num |   name   |  tel_no  |  valid_dt  |PK|  use_yn  |   
+      ---------------|----------|----------|------------|-------------|
+         varchar     |  varchar | varchar  |  varchar   |    varchar  |
       
       이름, 전화번호 입력 후 발급버튼      
       Java.util.Ramdom API를 이용 쿠폰번호 생성    
@@ -36,8 +35,9 @@
  
  -------------------------------------------
  
- 기생성된 쿠폰번호      
+ **기생성된 쿠폰번호      
  - 생성된 모든 쿠폰번호를 모두 사용하느 즉시 신규 쿠폰 발급되지 않는 문젝 생길 있음.      
-    - 모색 방안 : Triger로 쿠폰번호 여유분 체크하는 ondemend batch로 모니터하다 제한선까지 다달았을 때 쿠폰 생성하는 실시간 배치가 수행되도록 기능 제공
+    - 모색 방안 : Triger로 쿠폰번호 여유분 체크하는 ondemend Monitor batch 생성        
+                제한선까지 다달았을 때 쿠폰번호만 생성하는 실시간 배치가 수행하는 기능 제공
  
- 
+
